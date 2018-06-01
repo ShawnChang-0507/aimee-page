@@ -6,7 +6,7 @@
     
     
     
-    <title>Hello World | Aimee Chang | Welcome</title>
+    <title>Hello World | Aimee | Welcome</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     
     <meta name="theme-color" content="#77AAFF">
@@ -43,7 +43,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hello World">
 <meta property="og:url" content="http://zhangxiaoran.cn/posts/16107/index.html">
-<meta property="og:site_name" content="Aimee Chang">
+<meta property="og:site_name" content="Aimee">
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2018-05-26T04:00:10.294Z">
@@ -51,10 +51,11 @@
 <meta name="twitter:title" content="Hello World">
 <meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
     
-        <link rel="alternate" type="application/atom+xml" title="Aimee Chang" href="/atom.xml">
+        <link rel="alternate" type="application/atom+xml" title="Aimee" href="/atom.xml">
     
     <link rel="shortcut icon" href="/img/favicon.ico">
     <link id="style" rel="stylesheet" href="/css/style.css?v=3.0">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css?v=3.0">
     <script>window.lazyScripts=[]</script>
 
     <!-- custom head -->
@@ -75,7 +76,7 @@
           <img src="/img/avatar.jpg" alt="avatar">
         </a>
         <hgroup class="introduce">
-          <h5 class="nickname" id="name">Aimee Chang</h5>
+          <h5 class="nickname" id="name">Aimee</h5>
           
             <div id="yiyanaimee" class="aimee">&nbsp;</div>
           
@@ -153,47 +154,115 @@
 
 
     <main id="main">
-        <header class="top-header" id="header">
+        <!-- 登录 -->
+<div class="modal fade" id="loginId" tabindex="-1" role="dialog" aria-labelledby="loginTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="loginTitleId">登录账户</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="">账号：</label>
+                    <input type="text" class="form-control" name="" id="loginLoginName" aria-describedby="helpId" placeholder="">
+                    <small id="loginLoginNameHelp" class="form-text text-muted text-hide text-danger">Help text</small>
+                    <label for="">密码：</label>
+                    <input type="password" class="form-control" name="" id="loginLoginPassword" aria-describedby="helpId" placeholder="">
+                    <small id="loginLoginPasswordHelp" class="form-text text-muted text-hide text-danger">
+                        <span class="badge badge-danger passwordInfo">简单</span>
+                    </small>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary login" data-dismiss="modal">登录</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- register -->
+<div class="modal fade" id="registerId" tabindex="-1" role="dialog" aria-labelledby="registerTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="registerTitleId">注册账户</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="">登录账号：</label>
+                    <input type="text" class="form-control" name="" id="registerLoginName" aria-describedby="helpId" placeholder="">
+                    <small id="registerLoginNameHelp" class="form-text text-muted text-danger text-hide">请填写登录账号！</small>
+                    <label for="">昵称：</label>
+                    <input type="text" class="form-control" name="" id="registerNickName" aria-describedby="helpId" placeholder="">
+                    <small id="registerNickNameHelp" class="form-text text-muted text-danger text-hide">请输入昵称</small>
+                    <label for="">登录密码：</label>
+                    <input type="password" class="form-control" name="" id="registerLoginPassword" aria-describedby="helpId" placeholder="">
+                    <small id="registerLoginPasswordHelp" class="form-text text-muted text-danger text-hide">
+                        <span class="badge badge-danger passwordInfo">请输入登录密码！</span>
+                    </small>
+                    <label for="">重复密码：</label>
+                    <input type="password" class="form-control" name="" id="registerLoginRePassword" aria-describedby="helpId" placeholder="">
+                    <small id="registerLoginRePasswordHelp" class="form-text text-muted text-danger text-hide">重复登录密码！</small>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary register" data-dismiss="modal">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+<header class="top-header" id="header">
     <div class="flex-row">
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
-          <i class="icon icon-lg icon-navicon"></i>
+            <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">Hello World</div>
-        
-        <div class="search-wrap" id="search-wrap">
-            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
-                <i class="icon icon-lg icon-chevron-left"></i>
-            </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
-            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
-                <i class="icon icon-lg icon-search"></i>
-            </a>
+        <div class="flex-col header-title ellipsis">
+            Hello World
         </div>
         
-        <a href="../../atom.xml" target="_blank" class="header-icon waves-effect waves-circle waves-light" id="Rss">
-            <i class="icon icon-lg icon-rss"></i>
-        </a>
+            <div class="search-wrap" id="search-wrap">
+                <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                    <i class="icon icon-lg icon-chevron-left"></i>
+                </a>
+                <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+                <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                    <i class="icon icon-lg icon-search"></i>
+                </a>
+            </div>
+            
+            <a href="#" target="_blank" class="header-icon waves-effect waves-circle waves-light" id="Rss" data-toggle="modal" data-target="#loginId">
+                <i class="icon icon-lg icon-user"></i>
+            </a>
+            <a href="#" target="_blank" class="header-icon waves-effect waves-circle waves-light" id="Rss1" data-toggle="modal" data-target="#registerId">
+                <i class="icon icon-lg icon-user-plus"></i>
+            </a>
     </div>
 </header>
 <header class="content-header post-header">
-    
-    
-    <div class="container fade-scale">
+
+
+    <div class="aimee_container fade-scale">
         <div id="myheader">
             <h1 class="title">
                 
             </h1>
             <h5 class="subtitle">
                 
-                
+                    
             </h5>
         </div>
     </div>
 
 </header>
 
-
-<div class="container body-wrap">
+<div class="aimee_container body-wrap">
     
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
@@ -203,7 +272,7 @@
     </aside>
    
 <article id="post-hello-world"
-  class="post-article article-type-post fade" itemprop="blogPost">
+  class="post-article article-type-post aimee-fade" itemprop="blogPost">
 
     <div class="post-card">
         <h1 class="post-card-title">Hello World</h1>
@@ -258,8 +327,8 @@
     </div>
     <footer>
         <div onclick="location.href='http://zhangxiaoran.cn'">
-            <img src="/img/avatar.jpg" alt="Aimee Chang">
-            <a>Aimee Chang</a>
+            <img src="/img/avatar.jpg" alt="Aimee">
+            <a>Aimee</a>
         </div>
     </footer>
 </blockquote>
@@ -283,7 +352,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://zhangxiaoran.cn/posts/16107/&title=《Hello World》 — Aimee Chang&pic=http://zhangxiaoran.cn/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://zhangxiaoran.cn/posts/16107/&title=《Hello World》 — Aimee&pic=http://zhangxiaoran.cn/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -293,7 +362,7 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://zhangxiaoran.cn/posts/16107/&title=《Hello World》 — Aimee Chang&source=I will greet this day with love in my heart!" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://zhangxiaoran.cn/posts/16107/&title=《Hello World》 — Aimee&source=Aimee" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -303,7 +372,7 @@
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Hello World》 — Aimee Chang&url=http://zhangxiaoran.cn/posts/16107/&via=http://zhangxiaoran.cn" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Hello World》 — Aimee&url=http://zhangxiaoran.cn/posts/16107/&via=http://zhangxiaoran.cn" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
@@ -389,7 +458,6 @@
             Power by
             <a href="https://hexo.io/" target="_blank" rel="external nofollow">Hexo</a>&nbsp;·&nbsp;
             Theme
-            <!-- <a class="tomotoeslink" href="https://github.com/tomotoes/hexo-theme-tomotoes/" target="_blank" rel="external nofollow">tomotoes</a> -->
         </span>
 
         <br/>
@@ -457,7 +525,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://zhangxiaoran.cn/posts/16107/&title=《Hello World》 — Aimee Chang&pic=http://zhangxiaoran.cn/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://zhangxiaoran.cn/posts/16107/&title=《Hello World》 — Aimee&pic=http://zhangxiaoran.cn/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -467,7 +535,7 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://zhangxiaoran.cn/posts/16107/&title=《Hello World》 — Aimee Chang&source=I will greet this day with love in my heart!" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://zhangxiaoran.cn/posts/16107/&title=《Hello World》 — Aimee&source=Aimee" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -477,7 +545,7 @@
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Hello World》 — Aimee Chang&url=http://zhangxiaoran.cn/posts/16107/&via=http://zhangxiaoran.cn" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Hello World》 — Aimee&url=http://zhangxiaoran.cn/posts/16107/&via=http://zhangxiaoran.cn" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
@@ -508,7 +576,11 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
 </script>
 
 <!-- jquery -->
-<script src="/js/jquery.min.js?v=3.0"></script>
+<!-- <script src="/js/jquery.min.js?v=3.0"></script> -->
+
+<script src="/js/jquery.min.js?v=3.0" type="text/JavaScript"></script>
+<script src="/js/popper.min.js?v=3.0" type="text/JavaScript"></script>
+<script src="/js/bootstrap.min.js?v=3.0" type="text/JavaScript"></script>
 
 <!-- 搜索 -->
 
@@ -598,7 +670,7 @@ postshow();
 
 
 /* 粘贴提示 */
-G($(".post-content"), location.href, "Aimee Chang");
+G($(".post-content"), location.href, "Aimee");
 
 
 /* 控制台 */

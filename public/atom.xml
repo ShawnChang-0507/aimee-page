@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Aimee Chang</title>
+  <title>Aimee</title>
   <icon>https://www.gravatar.com/avatar/9e038d63943b9399c4fabb9939262837</icon>
   <subtitle>Welcome</subtitle>
   <link href="/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>http://zhangxiaoran.cn/</id>
   
   <author>
-    <name>Aimee Chang</name>
+    <name>Aimee</name>
     <email>sanbowla@163.com</email>
   </author>
   
