@@ -599,7 +599,7 @@ let countFail = 0;
 function getHitokoto() {
     $.ajax({
         type: "GET",
-        url: "https://sslapi.hitokoto.cn/",
+        url: "https://v1.hitokoto.cn",
         dataType: "json",
         timeout: 2500,
         success: function (data) {

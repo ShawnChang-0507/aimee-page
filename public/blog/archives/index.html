@@ -433,6 +433,15 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 <script src="/js/popper.min.js?v=3.0" type="text/JavaScript"></script>
 <script src="/js/bootstrap.min.js?v=3.0" type="text/JavaScript"></script>
 
+<script>
+    $(function () {
+        $(".dropdown-item").click(function () {
+            $(".article-group").text(this.text);
+            $(".article-group").val(this.text);
+        })
+    })
+</script>
+
 <!-- 搜索 -->
 
 <div class="search-panel" id="search-panel">
