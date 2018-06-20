@@ -1,8 +1,11 @@
-@font-face {
+/* @font-face {
     font-family: "FZSEJW";
     src: url('fonts/fz/fzsejw.ttf') format("truetype")
+} */
+@font-face {
+    font-family: "Twinkle";
+    src: url('fonts/fz/Twinkle.ttf') format("truetype")
 }
-
 #page,
 #page a {
     color: #eee
@@ -442,7 +445,7 @@ li#link-wechat span {
     animation: jumpWhite 1.5s ease-in-out infinite alternate;
     text-shadow: #452d2d 0 0 1px, #fffffb 0 0 1px, #fffffb 0 0 2px;
     /* "FZSEJW",  */
-    font-family: "FZSEJW", "Helvetica Neue", "Microsoft Yahei", "Microsoft Yahei", -apple-system, sans-serif
+    font-family: "Twinkle", "FZSEJW", "Helvetica Neue", "Microsoft Yahei", "Microsoft Yahei", -apple-system, sans-serif
 }
 
 @-webkit-keyframes jumpWhite {
@@ -486,7 +489,7 @@ li#link-wechat span {
     margin-bottom: 200px;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-    font-family: "FZSEJW", "Helvetica Neue", "Microsoft Yahei", -apple-system, sans-serif
+    font-family: "Twinkle", "FZSEJW", "Helvetica Neue", "Microsoft Yahei", -apple-system, sans-serif
 }
 
 .coding.jump {
